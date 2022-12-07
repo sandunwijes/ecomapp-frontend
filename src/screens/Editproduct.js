@@ -33,7 +33,7 @@ const Editproduct = ({match}) => {
   
         if(product) {
 
-            if (product._id == match.params.productid){
+            if (product._id === match.params.productid){
                 setname(product.name)
                 setprice(product.price)
                 setdescription(product.description)

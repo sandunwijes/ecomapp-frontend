@@ -5,7 +5,7 @@ export const placeOrder = (token, subtotal) => (dispatch, getState) => {
   const currentUser = getState().loginReducer.currentUser;
   const demoItems = getState().cartReducer.cartItems;
 
-  const cartItems = new Array();
+  const cartItems = [];
 
   // creating cartitems array according to the mongoose orderschema model
   for (let i = 0; i < demoItems.length; i++) {

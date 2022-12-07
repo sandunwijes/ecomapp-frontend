@@ -98,7 +98,7 @@ export const filterProducts = (searchkey, sort, category) => (dispatch) => {
       }
 
       if (sort !== "popular") {
-        if (sort == "htl") {
+        if (sort === "htl") {
           filteredproducts = res.data.sort((a, b) => {
             return -a.price + b.price;
           });

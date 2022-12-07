@@ -20,7 +20,7 @@ function Profilescreen() {
   const [cpassword, setCpassword] = useState();
 
   const update = () => {
-    if (password == cpassword) {
+    if (password === cpassword) {
       const updateduser = {
         name: name,
         email: email,
