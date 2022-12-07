@@ -22,10 +22,10 @@ function App() {
       <BrowserRouter>
         <Route path="/" component={Homescreens} exact/>
         <Route path="/product/:id" component={Productdescscreen}/>
-        <Route path='/cart' component={Cartscreen}/>
-       <Route path='/login' component={Loginscreen}/>
-       <Route path='/register' component={Registrationscreen}/>
-       <Route path='/orders' component={Ordersscreen}/>
+        <Route path="/cart" component={Cartscreen}/>
+       <Route path="/login" component={Loginscreen}/>
+       <Route path="/register" component={Registrationscreen}/>
+       <Route path="/orders" component={Ordersscreen}/>
        <Route path="/orderinfo/:orderid" component={Orderinfo}/>
        <Route path="/profile" component={Profilescreen}/>
        <Route path="/admin" component={Adminscreen}/>
