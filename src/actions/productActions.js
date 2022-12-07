@@ -1,5 +1,5 @@
 import axios from "../axios";
-//import axios from "axios";
+
 
 export const getAllProducts = () => (dispatch) => {
   dispatch({ type: "GET_PRODUCTS_REQUEST" });

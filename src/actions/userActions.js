@@ -1,5 +1,4 @@
 import axios from "../axios";
-//import axios from "axios";
 
 export const registerNewUser = (user) => (dispatch) => {
   dispatch({ type: "USER_REGISTER_REQUEST" });
