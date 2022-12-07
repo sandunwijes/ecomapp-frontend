@@ -1,5 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
+import bootstrap from "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Homescreens from "./screens/Homescreens";
 import { BrowserRouter, Route } from "react-router-dom";
 import Productdescscreen from "./screens/Productdescscreen";
@@ -18,15 +19,15 @@ function App() {
       <Navbar />
 
       <BrowserRouter>
-        <Route path="/" component={Homescreens} exact />
-        <Route path="/product/:id" component={Productdescscreen} />
-        <Route path="/cart" component={Cartscreen} />
-        <Route path="/login" component={Loginscreen} />
-        <Route path="/register" component={Registrationscreen} />
-        <Route path="/orders" component={Ordersscreen} />
-        <Route path="/orderinfo/:orderid" component={Orderinfo} />
-        <Route path="/profile" component={Profilescreen} />
-        <Route path="/admin" component={Adminscreen} />
+        <Route path='/' component={Homescreens} exact />
+        <Route path='/product/:id' component={Productdescscreen} />
+        <Route path='/cart' component={Cartscreen} />
+        <Route path='/login' component={Loginscreen} />
+        <Route path='/register' component={Registrationscreen} />
+        <Route path='/orders' component={Ordersscreen} />
+        <Route path='/orderinfo/:orderid' component={Orderinfo} />
+        <Route path='/profile' component={Profilescreen} />
+        <Route path='/admin' component={Adminscreen} />
       </BrowserRouter>
     </div>
   );
